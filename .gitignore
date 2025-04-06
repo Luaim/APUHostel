@@ -1,0 +1,24 @@
+# === Java and NetBeans ===
+*.class
+*.jar
+*.war
+*.ear
+
+# Build directories
+/dist/
+/build/
+/nbbuild/
+/nbdist/
+/nbproject/private/
+/APUHostelSystem-ejb/build/
+/APUHostelSystem-war/build/
+
+# NetBeans specific
+.netbeans/
+*.iml
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+
