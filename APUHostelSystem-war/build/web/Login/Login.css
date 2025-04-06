@@ -1,0 +1,158 @@
+/* 
+    Created on : Feb 27, 2025, 9:08:20 PM
+    Author     : Luai
+*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9ecef;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    width: 95%;
+    max-width: 500px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    overflow-y: auto; 
+    max-height: 90vh;
+}
+
+.header h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.auth-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    padding: 8px 20px;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 20px; 
+}
+
+.button:hover, .button.active {
+    background-color: #333;
+    color: white;
+}
+
+.form-container {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], input[type="number"], input[type="tel"], select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc !important;
+    border-radius: 10px !important;
+    box-sizing: border-box; 
+    outline: none; 
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+    border: none; 
+    background: none; 
+    color: #333; 
+}
+
+
+.submit {
+    width: 100%;
+    padding: 8px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 40px 20px;
+        width: 85%;
+        max-height: 85vh;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .header p, .form-container h2 {
+        font-size: 16px;
+    }
+
+    .button {
+        padding: 10px 20px;
+    }
+}
+
+/*this for the sign up errors messages*/
+
+.success-message {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+

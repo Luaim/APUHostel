@@ -1,0 +1,53 @@
+@startuml
+annotation jakarta.servlet.annotation.MultipartConfig
+annotation jakarta.servlet.annotation.WebServlet
+annotation java.lang.Override
+class db.DBConnection
+class jakarta.servlet.ServletException
+class jakarta.servlet.http.HttpServlet
+class jakarta.servlet.http.HttpServletRequest
+class jakarta.servlet.http.HttpServletResponse
+class jakarta.servlet.http.HttpSession
+class jakarta.servlet.http.Part
+class java.io.File
+class java.io.IOException
+class java.nio.file.Paths
+class java.security.MessageDigest
+class java.security.NoSuchAlgorithmException
+class java.sql.Connection
+class java.sql.PreparedStatement
+class java.sql.ResultSet
+class servlet.LoginServlet
+class servlet.SignupServlet
+servlet.LoginServlet ..> jakarta.servlet.annotation.WebServlet
+servlet.LoginServlet ..> java.lang.Override
+servlet.LoginServlet ..> db.DBConnection
+servlet.LoginServlet ..> jakarta.servlet.ServletException
+servlet.LoginServlet --|> jakarta.servlet.http.HttpServlet
+servlet.LoginServlet ..> jakarta.servlet.http.HttpServletRequest
+servlet.LoginServlet ..> jakarta.servlet.http.HttpServletResponse
+servlet.LoginServlet ..> jakarta.servlet.http.HttpSession
+servlet.LoginServlet ..> java.io.IOException
+servlet.LoginServlet ..> java.security.MessageDigest
+servlet.LoginServlet ..> java.security.NoSuchAlgorithmException
+servlet.LoginServlet ..> java.sql.Connection
+servlet.LoginServlet ..> java.sql.PreparedStatement
+servlet.LoginServlet ..> java.sql.ResultSet
+servlet.SignupServlet ..> jakarta.servlet.annotation.MultipartConfig
+servlet.SignupServlet ..> jakarta.servlet.annotation.WebServlet
+servlet.SignupServlet ..> java.lang.Override
+servlet.SignupServlet ..> db.DBConnection
+servlet.SignupServlet ..> jakarta.servlet.ServletException
+servlet.SignupServlet --|> jakarta.servlet.http.HttpServlet
+servlet.SignupServlet ..> jakarta.servlet.http.HttpServletRequest
+servlet.SignupServlet ..> jakarta.servlet.http.HttpServletResponse
+servlet.SignupServlet ..> jakarta.servlet.http.Part
+servlet.SignupServlet ..> java.io.File
+servlet.SignupServlet ..> java.io.IOException
+servlet.SignupServlet ..> java.nio.file.Paths
+servlet.SignupServlet ..> java.security.MessageDigest
+servlet.SignupServlet ..> java.security.NoSuchAlgorithmException
+servlet.SignupServlet ..> java.sql.Connection
+servlet.SignupServlet ..> java.sql.PreparedStatement
+servlet.SignupServlet ..> java.sql.ResultSet
+@enduml
