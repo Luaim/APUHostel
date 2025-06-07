@@ -62,18 +62,6 @@ APUHostelSystem/
 ```
 
 ---
-
-## 📸 Screenshots
-
-| Role            | Screenshot |
-|-----------------|------------|
-| Managing Staff  | ✅ Dashboard, User Management, Reports |
-| Resident        | ✅ Profile, Submit/Track Visitor Request |
-| Security Staff  | ✅ Visitor Verification, Activity Logs |
-
-
----
-
 ## 🗃️ Database Schema
 
 - **Users**: Manages all user accounts and roles
